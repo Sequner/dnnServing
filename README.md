@@ -8,4 +8,5 @@ The client-server model was implemented using gRPC. The client side sends an inp
 Server-side library requirements are in server/pretrained folder.
 
 To start the server: ```python3 server/server.py```
+
 To start the client: ```python3 client/client.py```
