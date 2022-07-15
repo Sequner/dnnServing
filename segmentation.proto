@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+service SegmentationService {
+    rpc Inference(stream UploadImageRequest) returns (stream UploadImageResponse) {};
+}
+
+message UploadImageRequest {
+    bytes image = 1;
+}
+
+message UploadImageResponse {
+    bytes image = 1;
+}
